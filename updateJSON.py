@@ -16,7 +16,7 @@ jsonFilePath = "data.json"
 def float_format( x, n_digits ) :
   # function to format x with n_digits after the decimal point
   # replace decimal point with comma, replace 'nan' with three dashes '---'
-  # this works with also with integers or n_digits=0, in contrast to e.g. round( 1.23, 0) which generates '1.0'
+  # this works also with integers or n_digits=0, in contrast to e.g. round( 1.23, 0) which generates '1.0'
   s = ('{0:.'+str(n_digits)+'f}').format(x).replace(".",",").replace('nan','---') 
   return s
 
